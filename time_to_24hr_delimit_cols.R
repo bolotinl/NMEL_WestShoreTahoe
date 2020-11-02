@@ -10,7 +10,7 @@ library(tidyverse)
 library(lubridate)
 setwd("/Volumes/My Passport/West Shore Tahoe/All raw data pulled 10_30_2020")
 
-dat <- read.table(file = "miller_Append_2020-10-30_10-13-21-757.csv", skip = 73, header = FALSE) ###########CHANGE FILENAME############
+dat <- read.table(file = "madden_Append_2020-10-30_09-50-02-241.csv", skip = 75, header = FALSE) ###########CHANGE FILENAME, skip = # ############
 head(dat)
 
 ## Name columns
@@ -36,4 +36,4 @@ dat <- select(dat, c("DateTime", "elapsed_seconds", "pressure_psi", "temperature
 
 ## Output new .csv
 head(dat)  
-write.csv(dat, "miller_10_30_2020_Rformatted.csv") ############CHANGE FILENAME#########################################################
+write.csv(dat, "madden_10_30_2020_Rformatted.csv") ############CHANGE FILENAME#########################################################
